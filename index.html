@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dezinformacja w praktyce urzędu - panel szkoleniowy</title>
+  <style>
+    :root{--bg:#f7f3ed;--card:#fff;--ink:#191919;--muted:#6f675f;--line:#e7ded3;--brand:#d94b3d;--brand2:#fff0ed;--dark:#111827;--ok:#116b3a;--bad:#a02222}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+    header{background:linear-gradient(135deg,#ffffff 0%,#fff0ed 100%);border-bottom:1px solid var(--line);padding:48px 20px}.wrap{max-width:1180px;margin:auto}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}h1{font-size:clamp(34px,6vw,66px);line-height:.98;margin:12px 0;letter-spacing:-.05em}h2{font-size:clamp(26px,3.2vw,42px);line-height:1.1;margin:0 0 10px;letter-spacing:-.03em}h3{margin:22px 0 8px}.lead{font-size:18px;color:#37312d}.tag{display:inline-block;background:#111;color:#fff;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}.hero-card,.section,.card{background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:0 12px 38px rgba(43,28,18,.06)}.hero-card{padding:22px}.section{max-width:1180px;margin:22px auto;padding:26px}.card{padding:18px}.nav{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}.nav a,.btn{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px;color:#111;text-decoration:none;font-weight:800;cursor:pointer}.nav a:hover,.btn:hover{border-color:var(--brand)}main{padding:8px 18px 30px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.example{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.example img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#eee}.example div{padding:12px}.example h3{font-size:16px;margin:0 0 4px}.example p{font-size:13px;color:var(--muted);margin:0}.imgcard{overflow:hidden;padding:0}.imgcard img{display:block;width:100%;background:#eee}.imgcap{padding:12px 14px;color:var(--muted);font-size:13px}.pill{display:inline-block;background:var(--brand2);color:#8b251d;padding:6px 10px;border-radius:999px;margin:3px;font-weight:800;font-size:13px}.task{background:#fff8f6;border-left:5px solid var(--brand);border-radius:16px;padding:16px;margin:16px 0}.task label{display:block;font-weight:850;margin-bottom:8px}.task textarea{width:100%;min-height:92px;border:1px solid var(--line);border-radius:14px;padding:12px;font:inherit;background:#fff}.checklist label{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;margin:9px 0}.note{background:#fff9e9;border:1px solid #ead8a3;border-radius:16px;padding:14px}.scenario{background:#f2f6ff;border:1px solid #d8e3ff;border-radius:16px;padding:15px}.test{background:#111827;color:#fff;border-radius:24px;padding:20px}.question{background:#fff;color:#111;border-radius:18px;padding:16px;margin:14px 0}.answers label{display:block;border:1px solid var(--line);border-radius:14px;padding:10px;margin:8px 0;cursor:pointer}.feedback{display:none;border-top:1px solid var(--line);margin-top:10px;padding-top:10px}.result{display:none;background:#fff;color:#111;border-radius:18px;padding:18px;margin-top:16px}.score{font-size:38px;font-weight:950}.good{color:var(--ok)}.wrong{color:var(--bad)}.toolbar{position:sticky;bottom:10px;z-index:10;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;max-width:1180px;margin:auto}.primary{background:#111;color:#fff}.danger{background:var(--brand);color:#fff;border-color:var(--brand)}.modal{display:none;position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.78);padding:22px;align-items:center;justify-content:center}.modal.open{display:flex}.modal img{max-width:min(1100px,96vw);max-height:88vh;border-radius:12px;background:#fff}.modal button{position:absolute;top:16px;right:16px;border:0;background:#fff;border-radius:999px;padding:10px 14px;font-weight:900}footer{text-align:center;color:var(--muted);padding:28px 20px 50px}.source{font-size:12px;color:var(--muted);margin-top:6px}
+    @media(max-width:900px){.hero,.grid,.grid3{grid-template-columns:1fr}.nav{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.section{padding:20px}.toolbar{position:static}.hero-card{padding:18px}}
+    @media(max-width:560px){.nav,.gallery{grid-template-columns:1fr}header{padding:34px 16px}.section{margin:16px auto}}
+    @media print{header,.nav,.toolbar,.modal,.btn{display:none!important}body{background:#fff}.section,.card{box-shadow:none;break-inside:avoid}.test{background:#fff;color:#111;border:1px solid var(--line)}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap hero">
+    <div>
+      <span class="tag">Fake? Fake! - wersja dla urzędów</span>
+      <h1>Dezinformacja w praktyce urzędu</h1>
+      <p class="lead">Interaktywny panel szkoleniowy dla dorosłych uczestników: pracowników urzędów, instytucji publicznych i osób odpowiedzialnych za komunikację z mieszkańcami.</p>
+      <nav class="nav" aria-label="Skróty">
+        <a href="#moduly">Moduły ↓</a><a href="#galeria">Przykłady ↓</a><a href="#test">Test ↓</a><a href="#notatki">Notatki ↓</a>
+      </nav>
+    </div>
+    <div class="hero-card">
+      <h2>Cel szkolenia</h2>
+      <p>Uczestnik potrafi rozpoznać ryzykowną treść, ocenić źródło, odróżnić fakt od opinii, zauważyć manipulację i dobrać bezpieczną reakcję w kontekście pracy urzędu.</p>
+      <span class="pill">fake news</span><span class="pill">boty i trolle</span><span class="pill">lateral reading</span><span class="pill">fakt vs opinia</span><span class="pill">manipulacja</span><span class="pill">dieta medialna</span>
+    </div>
+  </div>
+</header>
+<main>
+<section class="section" id="moduly">
+  <h2>1. Mapa szkolenia</h2>
+  <p class="lead">Materiał został przerobiony z krótkich scenariuszy lekcyjnych na praktyczny warsztat dla dorosłych. Zamiast sytuacji szkolnych są tu decyzje urzędowe: komunikat na stronie, komentarz pod postem, rozmowa z mieszkańcem, weryfikacja źródła i wybór kanałów informacji.</p>
+  <div class="grid3">
+    <div class="card"><h3>Rozpoznaj</h3><p>Co jest fałszywą informacją, a co tylko opinią, żartem albo niepełnym kontekstem?</p></div>
+    <div class="card"><h3>Sprawdź</h3><p>Kto publikuje treść, czy inne źródła ją potwierdzają i jaki jest kontekst?</p></div>
+    <div class="card"><h3>Zareaguj</h3><p>Czy odpowiadać publicznie, zgłosić, skonsultować, czy zostawić bez reakcji?</p></div>
+  </div>
+  <div class="task" id="notatki"><label>Twoje pierwsze skojarzenia z dezinformacją w pracy urzędu</label><textarea data-save="intro" placeholder="Np. fałszywy post o świadczeniach, plotka o naborze, zmanipulowany screen pisma, agresywne komentarze pod profilem urzędu..."></textarea></div>
+</section>
+<section class="section" id="galeria">
+  <h2>2. Przykłady ze zdjęciami z prezentacji</h2>
+  <p class="lead">Kliknij obraz, żeby go powiększyć. Każdy przykład omawiaj pytaniem: „Co tu wygląda podejrzanie?” oraz „Jaka byłaby bezpieczna reakcja urzędu?”.</p>
+  <div class="gallery">
+    <article class="example"><img src="assets/crop_sfabrykowana.jpg" alt="Sfabrykowana informacja"><div><h3>Sfabrykowana informacja</h3><p>Treść zmyślona, udająca fakt.</p></div></article>
+    <article class="example"><img src="assets/crop_zmanipulowana.jpg" alt="Treść zmanipulowana"><div><h3>Treść zmanipulowana</h3><p>Przerobiony obraz lub przekaz.</p></div></article>
+    <article class="example"><img src="assets/crop_podszywanie.jpg" alt="Podszywanie się"><div><h3>Podszywanie się</h3><p>Fałszywy profil udaje znaną markę lub instytucję.</p></div></article>
+    <article class="example"><img src="assets/crop_falszywy_kontekst.jpg" alt="Fałszywy kontekst"><div><h3>Fałszywy kontekst</h3><p>Prawdziwy obraz, ale opisany nieprawdziwie.</p></div></article>
+    <article class="example"><img src="assets/crop_wprowadzajace_w_blad.jpg" alt="Treści wprowadzające w błąd"><div><h3>Wprowadzenie w błąd</h3><p>Pominięcie ważnej części informacji.</p></div></article>
+    <article class="example"><img src="assets/crop_falszywy_zwiazek.jpg" alt="Fałszywy związek"><div><h3>Fałszywy związek</h3><p>Opis sugeruje coś, czego obraz nie potwierdza.</p></div></article>
+    <article class="example"><img src="assets/crop_satyra.jpg" alt="Satyra i parodia"><div><h3>Satyra i parodia</h3><p>Żart może też utrwalać krzywdzący przekaz.</p></div></article>
+    <article class="example"><img src="assets/przyklady_7_typow.jpg" alt="Zestaw typów fałszywych informacji"><div><h3>Zestaw 7 typów</h3><p>Plansza do pracy grupowej.</p></div></article>
+  </div>
+  <div class="task"><label>Ćwiczenie: wybierz jeden przykład i oceń ryzyko dla urzędu</label><textarea data-save="przyklad" placeholder="Który przykład wybierasz? Co jest ryzykowne? Co zrobiłby pracownik urzędu?"></textarea></div>
+</section>
+<section class="section">
+  <h2>3. Boty, trolle i komentarze</h2>
+  <div class="grid">
+    <div class="card imgcard"><img src="assets/bot_troll_komentarze.jpg" alt="Komentarze, boty i trolle"><div class="imgcap">Przykład komentarza i profilu do analizy.</div></div>
+    <div><p class="lead">W pracy urzędu komentarze pod postami mogą sprawiać wrażenie głosu mieszkańców, ale część profili może być nieautentyczna albo nastawiona na eskalację emocji.</p><div class="checklist"><label><input type="checkbox"> Konto nie ma historii aktywności.</label><label><input type="checkbox"> Komentarz jest skrajnie emocjonalny.</label><label><input type="checkbox"> Profil obraża innych i polaryzuje dyskusję.</label><label><input type="checkbox"> Treść powtarza się pod wieloma postami.</label></div></div>
+  </div>
+  <div class="task"><label>Decyzja urzędowa</label><textarea data-save="komentarze" placeholder="Czy odpowiadamy? Czy robimy screen? Czy zgłaszamy komentarz? Jaki komunikat byłby rzeczowy?"></textarea></div>
+</section>
+<section class="section">
+  <h2>4. Sprawdzanie źródeł - lateral reading</h2>
+  <div class="grid"><div><p class="lead">Zanim uwierzymy stronie lub postowi, sprawdzamy, kto za nim stoi. Nie czytamy tylko w głąb jednej strony - sprawdzamy ją „w poziomie”, czyli w innych źródłach.</p><div class="note"><strong>Pytania kontrolne:</strong><br>Kto jest właścicielem portalu? Jak się finansuje? Co inne źródła piszą o tej stronie? Czy informację potwierdzają inne wiarygodne miejsca? Czy autor może mieć interes w jednostronnym pokazaniu sprawy?</div></div><div class="card imgcard"><img src="assets/sprawdzanie_w_poziomie.jpg" alt="Sprawdzanie w poziomie"><div class="imgcap">Infografika o sprawdzaniu źródeł.</div></div></div>
+  <div class="task"><label>Sprawdź źródło</label><textarea data-save="zrodlo" placeholder="Wpisz źródło lub typ źródła. Jakie 3 kroki wykonasz przed wykorzystaniem informacji?"></textarea></div>
+</section>
+<section class="section">
+  <h2>5. Fakt, opinia i ocena</h2>
+  <div class="grid"><div class="card imgcard"><img src="assets/fakt_opinia.jpg" alt="Fakt i opinia"><div class="imgcap">Materiał do ćwiczenia: co można sprawdzić, a co jest oceną?</div></div><div><p class="lead">Fakt można zweryfikować. Opinia zawiera ocenę, interpretację lub odczucie. W komunikacji publicznej trzeba jasno rozdzielać jedno od drugiego.</p><div class="scenario"><strong>Przykład dla urzędu:</strong><br>„Nabór trwa do 30 czerwca” - fakt do sprawdzenia.<br>„Ten nabór jest skomplikowany” - opinia/ocena.<br>„Urząd nic nie robi” - uogólnienie, które wymaga doprecyzowania.</div></div></div>
+  <div class="task"><label>Przerób opinię na komunikat oparty na faktach</label><textarea data-save="faktopinia" placeholder="Wpisz opinię lub emocjonalne zdanie i zaproponuj neutralną, urzędową wersję."></textarea></div>
+</section>
+<section class="section">
+  <h2>6. Techniki manipulacji</h2>
+  <div class="grid"><div><p class="lead">Manipulacja często działa przez emocje, fałszywy wybór, atak na osobę, wyrwane z kontekstu dane albo sugestywny język.</p><div class="grid"><div class="card"><strong>Strach</strong><br>„To koniec, wszyscy stracą...”</div><div class="card"><strong>Fałszywa dychotomia</strong><br>„Albo jesteś z nami, albo przeciwko nam”.</div><div class="card"><strong>Ad personam</strong><br>Atak na osobę zamiast argumentu.</div><div class="card"><strong>Cherry picking</strong><br>Wybieranie tylko wygodnych danych.</div></div></div><div class="card imgcard"><img src="assets/techniki_manipulacji.jpg" alt="Techniki manipulacji"><div class="imgcap">Przykłady technik manipulacji.</div></div></div>
+  <div class="task"><label>Zaznacz manipulację</label><textarea data-save="manipulacja" placeholder="Wymyśl lub wklej zdanie z komentarza. Jaką technikę widzisz? Jak można odpowiedzieć rzeczowo?"></textarea></div>
+</section>
+<section class="section">
+  <h2>7. Manipulacja językowa</h2>
+  <div class="grid"><div class="card imgcard"><img src="assets/manipulacja_jezykowa_screeny.jpg" alt="Manipulacja językowa"><div class="imgcap">Przykłady języka nacechowanego emocjonalnie.</div></div><div><p class="lead">Urzędnik powinien szczególnie uważać na słowa, które wzmacniają konflikt: „wszyscy”, „nigdy”, „zawsze”, „skandal”, „ukrywana prawda”. Taki język często nie wyjaśnia sprawy, tylko podkręca emocje.</p><div class="task"><label>Zamień język emocjonalny na neutralny</label><textarea data-save="jezyk" placeholder="Np. zamiast: To skandal! - Proponowana odpowiedź: Wyjaśniamy, że..."></textarea></div></div></div>
+</section>
+<section class="section">
+  <h2>8. Krytyczne wyszukiwanie informacji</h2>
+  <div class="grid"><div><p class="lead">Samo wpisanie hasła w wyszukiwarkę to za mało. Warto szukać precyzyjnie: w konkretnej domenie, po dokładnej frazie, z pominięciem niechcianych wyników.</p><div class="card"><strong>Przydatne operatory:</strong><br><code>"dokładna fraza"</code> - szuka cytatu<br><code>site:gov.pl świadczenie</code> - szuka w domenie<br><code>-plotka</code> - wyklucza słowo<br><code>filetype:pdf</code> - szuka PDF</div></div><div class="card imgcard"><img src="assets/operatory_wyszukiwania.jpg" alt="Operatory wyszukiwania"><div class="imgcap">Infografika o operatorach wyszukiwania.</div></div></div>
+  <div class="task"><label>Zapisz zapytanie do wyszukiwarki</label><textarea data-save="wyszukiwanie" placeholder="Np. site:katowice.praca.gov.pl &quot;nabór&quot; filetype:pdf"></textarea></div>
+</section>
+<section class="section">
+  <h2>9. Dieta medialna</h2>
+  <div class="grid"><div class="card imgcard"><img src="assets/dieta_medialna.jpg" alt="Dieta medialna"><div class="imgcap">Karta „Moja dieta medialna”.</div></div><div><p class="lead">Dieta medialna to świadomy dobór źródeł, tak aby nie żyć tylko w bańce informacyjnej i nie opierać decyzji na przypadkowych postach.</p><div class="task"><label>Moje źródła informacji</label><textarea data-save="dieta1" placeholder="Z jakich źródeł korzystam przynajmniej raz w tygodniu?"></textarea></div><div class="task"><label>Co ograniczam, co dodaję?</label><textarea data-save="dieta2" placeholder="Których źródeł jest za dużo? Jakie wiarygodne źródła dodam?"></textarea></div></div></div>
+</section>
+<section class="section" id="test">
+  <h2>10. Test końcowy z automatycznym wynikiem</h2>
+  <p class="lead">Test ma 20 pytań. Wynik liczy się automatycznie. Próg zaliczenia możesz przyjąć np. 80% lub 90%.</p>
+  <div class="test"><div id="quiz"><p>Ładowanie testu...</p></div><div class="result" id="result"></div><button class="btn primary" type="button" id="gradeBtn">Sprawdź wynik</button> <button class="btn" type="button" id="resetBtn">Wyczyść odpowiedzi</button></div>
+</section>
+</main>
+<div class="toolbar"><button class="btn primary" type="button" id="notesBtn">Pobierz notatki TXT</button><button class="btn" type="button" onclick="window.print()">Drukuj / zapisz PDF</button><button class="btn danger" type="button" id="clearBtn">Wyczyść wszystko</button></div>
+<div class="modal" id="modal"><button type="button" id="closeModal">Zamknij ×</button><img id="modalImg" alt="Powiększony obraz"></div>
+<footer>Panel szkoleniowy - wersja do GitHub Pages. Materiał źródłowy: prezentacja „Fake? Fake!” / dodatek o dezinformacji, wykorzystanie edukacyjne i niekomercyjne.</footer>
+<script>
+(function(){
+'use strict';
+var questions=[
+{q:'Fałszywa informacja przedstawiana jako fakt, ale niezgodna z prawdą, to:',a:['opinia','fałszywa informacja','komentarz ekspercki','sprostowanie'],ok:1,why:'Fałszywa informacja udaje fakt, choć nie jest zgodna z rzeczywistością.'},
+{q:'Dezinformacja różni się tym, że zwykle jest rozpowszechniana:',a:['z intencją wyrządzenia szkody lub osiągnięcia wpływu','wyłącznie jako żart','tylko przez media tradycyjne','zawsze przez przypadek'],ok:0,why:'Kluczowa jest intencja: wpływ, szkoda, zysk, rozgłos lub manipulacja.'},
+{q:'Profil bez zdjęć, historii aktywności i obserwujących może wskazywać na:',a:['źródło pierwotne','bota lub fałszywe konto','oficjalny profil urzędu','portal naukowy'],ok:1,why:'To jedna z czerwonych flag przy ocenie komentarzy.'},
+{q:'Najbezpieczniejsza reakcja na skrajnie prowokacyjny komentarz pod profilem urzędu to:',a:['emocjonalna odpowiedź','udostępnienie komentarza dalej','ocena ryzyka, screen, konsultacja i rzeczowa reakcja','atak na autora'],ok:2,why:'Urząd powinien działać spokojnie, proceduralnie i rzeczowo.'},
+{q:'Sprawdzanie w poziomie oznacza:',a:['czytanie tylko jednego artykułu do końca','ocenę źródła przez sprawdzenie go w innych miejscach','sprawdzanie literówek','przewijanie strony poziomo'],ok:1,why:'Lateral reading polega na sprawdzeniu źródła poza samą badaną stroną.'},
+{q:'Które pytanie najlepiej pomaga ocenić źródło?',a:['Czy zgadzam się z tekstem?','Czy autor używa ładnej grafiki?','Kto jest właścicielem strony i czy inne źródła ją potwierdzają?','Czy tytuł jest emocjonalny?'],ok:2,why:'Wiarygodność nie polega na zgodności z naszym poglądem, tylko na możliwości weryfikacji.'},
+{q:'Zdanie „Nabór trwa do 30 czerwca” to najczęściej:',a:['fakt możliwy do sprawdzenia','opinia','satyra','atak personalny'],ok:0,why:'Ma konkretną treść, którą można zweryfikować.'},
+{q:'Zdanie „Ten nabór jest wyjątkowo trudny” to:',a:['fakt urzędowy','opinia lub ocena','dokument źródłowy','bot'],ok:1,why:'Zawiera ocenę, nie samą informację o faktach.'},
+{q:'Prawdziwe zdjęcie opisane jako aktualne, choć pochodzi sprzed kilku lat, to:',a:['podszywanie się','fałszywy kontekst','fakt','źródło pierwotne'],ok:1,why:'Obraz może być prawdziwy, ale kontekst fałszywy.'},
+{q:'Konto udające znaną firmę i obiecujące darmowe nagrody to przykład:',a:['podszywania się','lateral reading','diety medialnej','opinii'],ok:0,why:'Fałszywy profil podszywa się pod markę lub instytucję.'},
+{q:'Nagłówek lub opis niepasujący do zdjęcia to:',a:['fałszywy związek','sprawdzone źródło','fakt','cytat ekspercki'],ok:0,why:'Elementy przekazu sugerują coś, czego nie potwierdzają.'},
+{q:'Manipulacja językowa przez wzbudzanie strachu i oburzenia to:',a:['emocjonalny język','operator wyszukiwania','źródło pierwotne','neutralny styl'],ok:0,why:'Silne emocje mogą osłabiać krytyczną ocenę informacji.'},
+{q:'Fałszywa dychotomia polega na tym, że:',a:['pokazuje się tylko dwie opcje, choć jest ich więcej','podaje się źródło pierwotne','sprawdza się dokument PDF','oddziela się fakt od opinii'],ok:0,why:'To sztuczne zawężenie wyboru do dwóch skrajnych możliwości.'},
+{q:'Atak ad personam oznacza:',a:['sprawdzenie daty publikacji','atak na osobę zamiast odniesienia się do argumentu','cytowanie danych','porównanie kilku źródeł'],ok:1,why:'To zastąpienie argumentacji atakiem personalnym.'},
+{q:'Operator site: służy do:',a:['wyszukiwania w obrębie konkretnej strony lub domeny','usuwania komentarzy','sprawdzania grafiki','tworzenia haseł'],ok:0,why:'Np. site:gov.pl pozwala szukać wyników w domenie gov.pl.'},
+{q:'Cudzysłów w wyszukiwarce służy do:',a:['szukania dokładnego brzmienia frazy','ukrywania wyników','zgłaszania fake newsa','dodawania emocji'],ok:0,why:'Cudzysłów pomaga znaleźć konkretny cytat.'},
+{q:'Dieta medialna oznacza:',a:['świadomy dobór źródeł informacji','brak internetu','czytanie tylko jednego portalu','komentowanie każdej sprawy'],ok:0,why:'Chodzi o higienę informacyjną i różnorodność wiarygodnych źródeł.'},
+{q:'Wiarygodne źródło to takie, które:',a:['zawsze potwierdza nasze przekonania','pozwala sprawdzić informacje i ma przejrzysty kontekst','ma najwięcej wykrzykników','publikuje anonimowo'],ok:1,why:'Źródło ma pomagać ustalać fakty.'},
+{q:'Jeżeli treść wywołuje bardzo silne emocje, pracownik urzędu powinien najpierw:',a:['natychmiast ją udostępnić','zatrzymać się i sprawdzić źródło oraz kontekst','napisać złośliwy komentarz','usunąć wszystkie opinie'],ok:1,why:'Silne emocje to sygnał, że trzeba zwolnić i weryfikować.'},
+{q:'Najlepsza zasada końcowa brzmi:',a:['Szybkość jest ważniejsza niż prawda','STOP - SPRAWDŹ - ODPOWIEDZ','Nie trzeba podawać źródeł','Każdy screen jest dowodem'],ok:1,why:'Najpierw zatrzymanie, potem weryfikacja, dopiero na końcu reakcja.'}
+];
+function esc(s){return String(s).replace(/[&<>"']/g,function(m){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[m];});}
+function renderQuiz(){var box=document.getElementById('quiz');if(!box){return;}var html='';questions.forEach(function(it,i){html+='<div class="question"><h3>'+(i+1)+'. '+esc(it.q)+'</h3><div class="answers">';it.a.forEach(function(ans,j){html+='<label><input type="radio" name="q'+i+'" value="'+j+'"> '+esc(ans)+'</label>';});html+='</div><div class="feedback" id="f'+i+'"></div></div>';});box.innerHTML=html;}
+function gradeTest(){var score=0,answered=0;questions.forEach(function(it,i){var chosen=document.querySelector('input[name="q'+i+'"]:checked');var fb=document.getElementById('f'+i);var val=chosen?Number(chosen.value):-1;if(chosen){answered++;}var ok=val===it.ok;if(ok){score++;}if(fb){fb.style.display='block';fb.innerHTML=ok?'<strong class="good">Dobrze.</strong> '+esc(it.why):'<strong class="wrong">Do poprawy.</strong> Poprawna odpowiedź: <strong>'+esc(it.a[it.ok])+'</strong>. '+esc(it.why);}});var pct=Math.round(score/questions.length*100);var res=document.getElementById('result');if(res){res.style.display='block';res.innerHTML='<div class="score '+(pct>=80?'good':'wrong')+'">'+score+'/'+questions.length+' - '+pct+'%</div><p>Odpowiedziano na '+answered+' z '+questions.length+' pytań.</p><p>'+(pct>=90?'Wynik bardzo dobry - spełnia próg 90%.':pct>=80?'Wynik zaliczony przy progu 80%. Do progu 90% warto poprawić pytania oznaczone jako błędne.':'Wynik poniżej 80%. Wróć do modułów i przejdź test jeszcze raz.')+'</p>';res.scrollIntoView({behavior:'smooth',block:'center'});}}
+function resetTest(){document.querySelectorAll('input[type="radio"]').forEach(function(x){x.checked=false;});document.querySelectorAll('.feedback').forEach(function(x){x.style.display='none';});var r=document.getElementById('result');if(r){r.style.display='none';}}
+function saveFields(){try{document.querySelectorAll('[data-save]').forEach(function(el){var key='panel_'+el.getAttribute('data-save');el.value=localStorage.getItem(key)||'';el.addEventListener('input',function(){localStorage.setItem(key,el.value);});});}catch(e){}}
+function downloadNotes(){var txt='NOTATKI UCZESTNIKA - Dezinformacja w praktyce urzędu\n\n';document.querySelectorAll('[data-save]').forEach(function(el){txt+=el.getAttribute('data-save').toUpperCase()+':\n'+(el.value||'')+'\n\n';});var blob=new Blob([txt],{type:'text/plain;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='notatki_dezinformacja_urzedy.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href);},500);}
+function initImages(){var modal=document.getElementById('modal');var modalImg=document.getElementById('modalImg');if(!modal||!modalImg){return;}document.querySelectorAll('img').forEach(function(img){img.style.cursor='zoom-in';img.addEventListener('click',function(e){e.stopPropagation();modalImg.src=img.src;modal.classList.add('open');});});document.getElementById('closeModal').addEventListener('click',function(){modal.classList.remove('open');});modal.addEventListener('click',function(e){if(e.target===modal){modal.classList.remove('open');}});}
+function initButtons(){var g=document.getElementById('gradeBtn'),r=document.getElementById('resetBtn'),n=document.getElementById('notesBtn'),c=document.getElementById('clearBtn');if(g){g.addEventListener('click',gradeTest);}if(r){r.addEventListener('click',resetTest);}if(n){n.addEventListener('click',downloadNotes);}if(c){c.addEventListener('click',function(){try{localStorage.clear();}catch(e){}location.reload();});}}
+function init(){renderQuiz();saveFields();initImages();initButtons();}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>
+</body>
+</html>

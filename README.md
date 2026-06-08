@@ -1,7 +1,14 @@
-# Informacja o źródłach i użyciu materiałów
+# Dezinformacja w praktyce urzędu - panel szkoleniowy
 
-Panel został przygotowany na podstawie materiału edukacyjnego „Fake? Fake! Krytyczne myślenie w pigułce” dotyczącego dezinformacji, fake newsów i krytycznego myślenia.
+Statyczna strona HTML do uruchomienia na GitHub Pages.
 
-Grafiki/screeny użyte w katalogu `assets/` pochodzą z materiału źródłowego wskazanego przez użytkownika jako dostępny w licencji CC do użytku niekomercyjnego.
+## Publikacja
 
-Zalecane użycie: edukacyjne, szkoleniowe, niekomercyjne. Przy publikacji warto zachować informację o źródle i autorstwie materiału źródłowego.
+1. Rozpakuj ZIP.
+2. Wrzuć zawartość paczki do głównego katalogu repozytorium.
+3. W repozytorium powinny być bezpośrednio: `index.html`, `assets/`, `README.md`, `LICENSE_INFO.md`, `.nojekyll`.
+4. W GitHub: Settings → Pages → Deploy from a branch → `main` → `/root`.
+
+## Uwaga
+
+Ta wersja jest uproszczona i zabezpieczona przed błędami JavaScript, które mogły powodować biały ekran.
